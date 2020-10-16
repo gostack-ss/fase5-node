@@ -16,7 +16,7 @@ import OrdersProducts from '@modules/orders/infra/typeorm/entities/OrdersProduct
 @Entity('orders')
 class Order {
   @PrimaryGeneratedColumn('uuid')
-  @Exclude()
+  // @Exclude()
   id: string;
 
   @ManyToOne(() => Customer, { eager: true })
